@@ -44,5 +44,14 @@ DATASETS = {
 		'train_target_root': dataset_paths['blended_train'],
 		'test_source_root': dataset_paths['real_test'],
 		'test_target_root': dataset_paths['blended_test'],
-},
+	},
+	
+  'blendify2': {
+		'transforms': transforms_config.BlendifyTransforms,
+		'train_source_root': dataset_paths['real_train'],
+		'train_target_root': dataset_paths['real_train'],
+		'test_source_root': dataset_paths['real_test'],
+		'test_target_root': dataset_paths['real_test'],
+	  },
+
 }
